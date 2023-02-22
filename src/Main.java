@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +11,16 @@ public class Main {
                 System.out.println("output: " + (a + b) + "\n");
                 break;
             case "-":
-
+                System.out.println("output: " + (a - b) + "\n");
+                break;
+            case "*":
+                System.out.println("output" + ( a * b) + "\n");
+                break;
+            case "/":
+                System.out.println("output" + (a / b) + "\n");
+                break;
+            default:
+                System.out.println("wrong");
         }
     }
 }
